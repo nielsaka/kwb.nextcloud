@@ -19,7 +19,7 @@
 download_files <- function(
   hrefs = NULL,
   target_dir = create_download_dir("nextcloud_"),
-  paths = NULL,
+  paths = path_to_file_href(hrefs),
   user = nextcloud_user(),
   auth = nextcloud_auth()
 )

@@ -21,7 +21,7 @@ create_download_dir <- function(pattern)
 # dav_path ---------------------------------------------------------------------
 dav_path <- function()
 {
-  "/remote.php/dav"
+  "remote.php/dav"
 }
 
 # decode_url -------------------------------------------------------------------
