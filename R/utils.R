@@ -102,6 +102,8 @@ nextcloud_auth <- function(
 # path_to_file_href ------------------------------------------------------------
 path_to_file_href <- function(path = "", user = nextcloud_user())
 {
+  user_id <- Sys.getenv("NEXTCLOUD_ID")
+  user <- if (length(user_id) != "") user_id else user
   file.path(dav_path(), "files", user, path)
 }
 
